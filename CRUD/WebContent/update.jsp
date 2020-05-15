@@ -29,29 +29,77 @@ while(resultSet.next()){
 <!DOCTYPE html>
 <html>
 <body>
+<center>
 
 <h1>Update Student Information</h1>
 <form method="post" action="update-process.jsp">
-Registration No :<%=resultSet.getString("regd_no") %>
+
+<table>
+
+<tr>
+<td align="center">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRegistration No :<%=resultSet.getString("regd_no") %>
+</td>
+<td>
 <input type="hidden" name="id" value="<%=resultSet.getString("regd_no") %>">
-<br>
-Session:<br>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSession:
+</td>
+<td>
 <input type="text" name="Session" value="<%=resultSet.getString("Session") %>">
-<br>
-Branch:<br>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBranch:
+</td>
+<td>
 <input type="text" name="Branch" value="<%=resultSet.getString("Branch") %>">
-<br>
-Year:<br>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspYear:
+</td>
+<td>
 <input type="text" name="Years" value="<%=resultSet.getString("Years") %>">
-<br>
-Semester:<br>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSemester:
+</td>
+<td>
 <input type="text" name="Semester" value="<%=resultSet.getString("Semester") %>">
-<br>
-Student Name:<br>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+Student Name:
+</td>
+<td>
 <input type="text" name="Stud_Name" value="<%=resultSet.getString("Stud_Name") %>">
-<br>
-<br>
+</td>
+</tr>
+
+
+<tr>
+<td></td>
+<td>
 <input type="submit" value="submit">
+</td>
+</tr>
+
+</table>
+</center>
 </form>
 <%
 }
