@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Update Record</title>
 </head>
-<body>
+<body background="clgpic.jpg">
 <a href="Showall.jsp">Goto Show All Records</a>
 <center>
 <form action = "update.jsp">

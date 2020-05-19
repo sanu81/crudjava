@@ -8,7 +8,7 @@
 <title>Student Records In Detail</title>
 <%ResultSet resultset =null;%>
 </head>
-<body>
+<body bgcolor="3A6EA5">
 <form action="index.html">
 <%
    try{
@@ -23,8 +23,8 @@
 <center>
     <h1>Student List</h1>
     <table border=1>
-    <tr><th>Registration No</th><th>Session</th><th>Branch</th><th>
-Years</th><th>Semester</th> <th>Student Name</th></tr>
+    <tr><th width="160" height="30" align="center">Registration No</th><th width="110" height="30" align="center">Session</th><th width="110" height="30" align="center">Branch</th><th width="110" height="30" align="center">
+Years</th><th width="110" height="30" align="center">Semester</th> <th width="180" height="30" align="center">Student Name</th></tr>
         <%  while(resultset.next()){ %>
 <tr><td><%= resultset.getString(1) %></td><td><%= resultset.getString(2) %></td><td><%= resultset.getString(3) %></td><td>
 <%= resultset.getString(4) %></td><td><%= resultset.getString(5) %></td><td><%= resultset.getString(6) %></td></tr>

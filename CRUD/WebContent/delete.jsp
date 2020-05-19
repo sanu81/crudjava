@@ -7,7 +7,7 @@ pageEncoding="ISO-8859-1"%>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Delete Data</title>
 </head>
-<body>
+<body background="clgpic.jpg">
 <a href="Showall.jsp">Goto Show All Records</a>
 
 <form action="delete.jsp">

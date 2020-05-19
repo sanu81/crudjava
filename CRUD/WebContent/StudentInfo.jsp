@@ -11,7 +11,7 @@
 String nm ,  br;
 %>
 </head>
-<body>
+<body background="clgpic.jpg">
 <a href="http://localhost:8080/CRUD/index.html">Goto Dashboard</a>
 <form action="Save.jsp">
 <%
@@ -31,17 +31,19 @@ br = request.getParameter("br");
     <h1>Student Information</h1>
     </br>
         <table  align="center" bgcolor="gray" height="100px" width="300px">
+        
+        <tr><td height="20"></td></tr>
         <tr>
-        <td>
-        Branch:
+        <td align="center">
+         &nbsp &nbsp &nbsp &nbsp &nbsp  Branch:
         </td>
         <td><input type = "hidden" name="br" value=<%=br%>><%=br %>
         </td>
         </tr>
        
         <tr>
-        <td>
-          Year:  
+        <td align="center">
+          &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp Year:  
         </td>
         <td>
          <input type = "hidden" name="yr" value=<%=nm%>><%=nm %>
@@ -49,8 +51,8 @@ br = request.getParameter("br");
         </tr>
         
         <tr>
-        <td>
-        Semester:
+        <td align="center">
+         &nbsp &nbsp &nbsp &nbsp Semester:
         </td>
         <td>
         <select name = "sem">
@@ -62,8 +64,8 @@ br = request.getParameter("br");
         </tr>
         
         <tr>
-        <td>
-        Session: 
+        <td align="center">
+         &nbsp &nbsp &nbsp &nbsp &nbsp &nbspSession: 
         </td>
         <td>
          <input type = "text" name="Tsess">
@@ -72,7 +74,7 @@ br = request.getParameter("br");
         
         <tr>
         <td>
-        Registration No:  
+         &nbsp Registration No:  
         </td>
         <td>
         <input type = "text" name="Tregd">
@@ -82,7 +84,7 @@ br = request.getParameter("br");
         
         <tr>
         <td>
-        Student name:  
+        &nbsp &nbsp  &nbsp Student name:  
         </td>
         <td>
         <input type = "text" name="Tsname">
@@ -96,6 +98,8 @@ br = request.getParameter("br");
         <td>
         <input type="submit" value="Save">
         </td>
+        
+        <tr><td height="10"></td></tr>
       </table>  
 </center>
 

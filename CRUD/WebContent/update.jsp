@@ -28,23 +28,24 @@ while(resultSet.next()){
 %>
 <!DOCTYPE html>
 <html>
-<body>
+<body background="clgpic.jpg">
 <center>
 
 <h1>Update Student Information</h1>
 <form method="post" action="update-process.jsp">
 
-<table>
+<table align="center" bgcolor="gray" height="100px" width="300px">
 
+<tr><td height="10"></td></tr>
 <tr>
-<td align="center">
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRegistration No :<%=resultSet.getString("regd_no") %>
+<td align="center" colspan="2">
+Registration No :<%=resultSet.getString("regd_no") %>
 </td>
 <td>
 <input type="hidden" name="id" value="<%=resultSet.getString("regd_no") %>">
 </td>
 </tr>
-
+<tr><td height="3"></td></tr>
 <tr>
 <td align="center">
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSession:
@@ -54,6 +55,7 @@ while(resultSet.next()){
 </td>
 </tr>
 
+<tr><td height="3"></td></tr>
 <tr>
 <td align="center">
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBranch:
@@ -63,6 +65,7 @@ while(resultSet.next()){
 </td>
 </tr>
 
+<tr><td height="3"></td></tr>
 <tr>
 <td align="center">
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspYear:
@@ -72,6 +75,7 @@ while(resultSet.next()){
 </td>
 </tr>
 
+<tr><td height="3"></td></tr>
 <tr>
 <td align="center">
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSemester:
@@ -81,6 +85,7 @@ while(resultSet.next()){
 </td>
 </tr>
 
+<tr><td height="3"></td></tr>
 <tr>
 <td align="center">
 Student Name:
@@ -90,7 +95,7 @@ Student Name:
 </td>
 </tr>
 
-
+<tr><td height="10"></td></tr>
 <tr>
 <td></td>
 <td>
@@ -98,6 +103,7 @@ Student Name:
 </td>
 </tr>
 
+<tr><td height="10"></td></tr>
 </table>
 </center>
 </form>

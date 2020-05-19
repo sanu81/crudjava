@@ -9,7 +9,7 @@
 <title>Course Name</title>
 <%ResultSet resultset =null;%>
 </head>
-<body>
+<body background="clgpic.jpg">
     
 <a href="http://localhost:8080/CRUD/index.html">Goto Dashboard</a>
 <form action="Yearlist.jsp">

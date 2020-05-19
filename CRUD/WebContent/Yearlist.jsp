@@ -11,7 +11,7 @@
 String nm , br;
 %>
 </head>
-<body>
+<body background="clgpic.jpg">
 <a href="http://localhost:8080/CRUD/index.html">Goto Dashboard</a>
 <form action="StudentInfo.jsp">
 <%

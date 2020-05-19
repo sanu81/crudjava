@@ -8,7 +8,7 @@
 <head>
   <title>Upadte Record</title>
  </head>
- <body>
+ <body background="clgpic.jpg">
 <%
 String id = request.getParameter("id");
 String ses =request.getParameter("Session");
@@ -36,13 +36,15 @@ ps.setString(6, sname);
 int i = ps.executeUpdate();
 if(i > 0)
 {
-out.print("Record Updated Successfully");
-%><a href="Showall.jsp">Goto Show All Records</a> <%
+	%><a href="Showall.jsp">Goto Show All Records</a><br> <%
+			%><center><%out.print("Record Updated Successfully");%></center><%
+
 }
 else
 {
-out.print("There is a problem in updating Record.");
-%><a href="Showall.jsp">Goto Show All Records</a> <%
+	%><a href="Showall.jsp">Goto Show All Records</a><br> <%
+			%><center><%out.print("There is a problem in updating Record.");%></center><%
+
 }
 }
 catch(SQLException sql)
